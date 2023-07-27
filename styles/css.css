@@ -1,0 +1,31 @@
+ #full-nav{
+    background-color:#F85559;
+}
+.search-here i{
+     position: relative;
+     top: 10;
+     right: 3rem;
+}
+#shop-btn{
+     background-color: #F85559;
+     color: white;
+}
+ radio{
+     background-color: #F85559;
+}
+
+ @media screen and (max-width:576px) {
+     #logo{
+          margin-left: -455px;}
+
+      #logo-text{
+          color: black;
+      }    
+     #hidden{
+          margin-right: -450px;
+     }
+     #full-nav{
+          background-color: white;
+     }
+  
+} 
