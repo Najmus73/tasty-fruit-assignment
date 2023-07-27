@@ -27,5 +27,20 @@
      #full-nav{
           background-color: white;
      }
+     #deal-day{
+          max-width: 450px;
+          flex-direction: column;
+          text-align: center;
+     }
+     #time{
+          padding-top: 20px;
+          padding-left: 90px;
+     }
+    #last{
+       max-width: 480px;
+    }
+    #last-text{
+       font-size: 12px;
+    }
   
 } 

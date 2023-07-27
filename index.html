@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
     <link rel="stylesheet" href="./styles/css.css">
     <script src="https://cdn.tailwindcss.com"></script> 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -136,41 +137,41 @@
         </div>
     </div>
     
-    <div class="max-w-[74.75rem] relative mx-auto -mt-16 bg-white rounded-lg shadow invisible md:visible lg:visible">
+    <div class="max-w-[1200px] bg-white  mx-auto -mt-16  rounded-lg shadow invisible md:visible lg:visible relative">
         <div class="flex justify-evenly ">
             <div class="flex flex-col justify-center items-center">
-                <img class="" src="./images/fruit1.png" />
-                <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Grapes</div>
+                <img src="./images/fruit1.png" />
+                <div>Grapes</div>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img class="" src="./images/fruit2.png" />
-                <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Orange</div>
+                <img src="./images/fruit2.png" />
+                <div>Orange</div>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img class="" src="./images/fruit3.png" />
-                <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Mango</div>
+                <img src="./images/fruit3.png" />
+                <div>Mango</div>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img class="" src="./images/fruit4.png" />
-                <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Strawberry</div>
+                <img  src="./images/fruit4.png" />
+                <div>Strawberry</div>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img class="" src="./images/fruit5.png" />
-                <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Pomegranate</div>
+                <img src="./images/fruit5.png" />
+                <div>Pomegranate</div>
             </div>
         </div>
     </div>
 </section>
 </main>
 
-<section class="max-w-[1400px] mx-auto flex justify-between pt-28">
+<section class="max-w-[1400px] mx-auto flex justify-between pt-28" id="deal-day">
      <div>
         <div><h1 class="text-4xl font-extrabold pb-6">Deal of the day</h1></div>
         <div><p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>
             Latin literature from 45 BC, making it over 2000 years old.</p></div>
      </div>
 
-     <div>
+     <div id="time">
         <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
@@ -226,17 +227,16 @@
 
 
           <div class="card-actions">
-            <button class="text-common-collor" onclick="my_modal_4.showModal()">Details</button>
+            <button class="text-common-collor"  onclick="my_modal_4.showModal()">Details</button>
             <dialog id="my_modal_4" class="modal">
                 <form method="dialog" class="modal-box">
                     <div class="card  mx-auto bg-base-100 ">
                         <figure class="px-10 pt-10">
-                            <img src="./images/fruit6.png" alt="Shoes" class="rounded-lg" />
+                            <img src="./images/fruit6.png" class="rounded-lg"/>
                         </figure>
                         <div class=" flex flex-col items-center text-center">
                             <h2 class="card-title">Apples</h2>
-                            <p>Professional employees are there for you to pick the most amazing and
-                                fresh fruits.</p>
+                            <p>Best delivery man are there to pick the most amazing and fresh fruits</p>
                                 <div class="rating rating-lg rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
                                     <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
@@ -252,12 +252,9 @@
                                   </div>
                             <div class="card-actions flex items-center justify-center">
                                 <div class="modal-action gap-x-4">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button
-                                        class="btn bg-common-collor text-white hover:text-black ">Buy
-                                        Now</button>
-                                    <button
-                                        class="btn border-common-collor text-common-collor bg-transparent  ">Close</button>
+                                    
+                                    <button class="btn bg-common-collor text-white" id="shop-btn">Buy Now</button>
+                                    <button class="btn border-common-collor text-common-collor bg-transparent  ">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -294,18 +291,16 @@
 
 
           <div class="card-actions">
-            <!-- Open the modal using ID.showModal() method -->
             <button class="text-common-collor" onclick="my_modal_5.showModal()">Details</button>
             <dialog id="my_modal_5" class="modal">
                 <form method="dialog" class="modal-box">
                     <div class="card  mx-auto bg-base-100 ">
                         <figure class="px-10 pt-10">
-                            <img src="./images/fruit7.png" alt="Shoes" class="rounded-lg" />
+                            <img src="./images/fruit7.png" alt="Shoes" class="rounded-lg"/>
                         </figure>
                         <div class=" flex flex-col items-center text-center">
                             <h2 class="card-title">Orange</h2>
-                            <p>Professional employees are there for you to pick the most amazing and
-                                fresh fruits.</p>
+                            <p>Best delivery man are there to pick the most amazing and fresh fruits</p>
                                 <div class="rating rating-lg rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
                                     <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
@@ -321,12 +316,8 @@
                                   </div>
                             <div class="card-actions flex items-center justify-center">
                                 <div class="modal-action gap-x-4">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button
-                                        class="btn bg-common-collor text-white hover:text-black ">Buy
-                                        Now</button>
-                                    <button
-                                        class="btn border-common-collor text-common-collor bg-transparent  ">Close</button>
+                                    <button class="btn bg-common-collor text-white" id="shop-btn">Buy Now</button>
+                                    <button class="btn border-common-collor text-common-collor bg-transparent" id="shop-btn">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -359,7 +350,6 @@
             <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
           </div>
           <div class="card-actions">
-            <!-- Open the modal using ID.showModal() method -->
             <button class="text-common-collor" onclick="my_modal_6.showModal()">Details</button>
             <dialog id="my_modal_6" class="modal">
                 <form method="dialog" class="modal-box">
@@ -369,8 +359,7 @@
                         </figure>
                         <div class=" flex flex-col items-center text-center">
                             <h2 class="card-title">Dragon</h2>
-                            <p>Professional employees are there for you to pick the most amazing and
-                                fresh fruits.</p>
+                            <p>Best delivery man are there to pick the most amazing and fresh fruits</p>
                                 <div class="rating rating-lg rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
                                     <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
@@ -386,12 +375,9 @@
                                   </div>
                             <div class="card-actions flex items-center justify-center">
                                 <div class="modal-action gap-x-4">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button
-                                        class="btn bg-common-collor text-white hover:text-black ">Buy
-                                        Now</button>
-                                    <button
-                                        class="btn border-common-collor text-common-collor bg-transparent  ">Close</button>
+                                    
+                                    <button class="btn bg-common-collor text-white  " id="shop-btn">Buy Now</button>
+                                    <button class="btn border-common-collor text-common-collor bg-transparent" id="shop-btn">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -422,7 +408,7 @@
           </div>
           
           <div class="card-actions">
-            <!-- Open the modal using ID.showModal() method -->
+            
             <button class="text-common-collor" onclick="my_modal_7.showModal()">Details</button>
             <dialog id="my_modal_7" class="modal">
                 <form method="dialog" class="modal-box">
@@ -432,8 +418,7 @@
                         </figure>
                         <div class=" flex flex-col items-center text-center">
                             <h2 class="card-title">Banana</h2>
-                            <p>Professional employees are there for you to pick the most amazing and
-                                fresh fruits.</p>
+                            <p>Best delivery man are there to pick the most amazing and fresh fruits</p>
                                 <div class="rating rating-lg rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
                                     <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
@@ -449,12 +434,9 @@
                                   </div>
                             <div class="card-actions flex items-center justify-center">
                                 <div class="modal-action gap-x-4">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button
-                                        class="btn bg-common-collor text-white hover:text-black ">Buy
-                                        Now</button>
-                                    <button
-                                        class="btn border-common-collor text-common-collor bg-transparent  ">Close</button>
+                                    
+                                    <button class="btn bg-common-collor text-white" id="shop-btn">Buy Now</button>
+                                    <button class="btn border-common-collor text-common-collor bg-transparent" id="shop-btn">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -473,7 +455,7 @@
 
 
 <section class="max-w-[1400px] mx-auto pt-24 pb-32">
-    <div class="hero  min-h-[330px]  md:min-h-[530px]" style="background-image: url(./images/banner1.png);">
+    <div class="hero  min-h-[350px]  md:min-h-[530px]" style="background-image: url(./images/banner1.png);">
         <div class="hero-overlay bg-black bg-opacity-50"></div>
         <div class="hero-content flex flex-col  text-center text-neutral-content">
             <div>
@@ -543,7 +525,7 @@
      Latin literature from 45 BC, making it over 2000 years old.</p></div>
 </div>
 
-<section class="pt-12 pb-32">
+<section class="pt-12 pb-32" id="why-us">
     <div class="max-w-[1400px] mx-auto grid grid-cols-3">
        <div>
          <div class="flex items-center gap-4 pb-10">
@@ -605,7 +587,7 @@
 
 
 
-<footer >
+<footer id="last">
     <div class="h-96 bg-black">
         <div class="flex justify-center flex-col items-center pt-20 leading-10">
 
@@ -614,7 +596,7 @@
         <div><h1>Fruit Burst</h1></div>
         </div>
 
-        <div class="flex pb-14 gap-9 text-white">
+        <div class="flex pb-14 gap-9 text-white" id="last-text">
            <h3>Home</h3>
            <h3>About Us</h3>
            <h3>Shop</h3>
